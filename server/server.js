@@ -17,8 +17,8 @@ const UserModel = mongoose.model('users', UserSchema);
 app.use(bodyParser.json());
 
 app.post('/submitData', (req, res) => {
-    console.log("Name: " + req.body.name);
-    console.log("Age: " + req.body.age);
+    // console.log("Name: " + req.body.name);
+    // console.log("Age: " + req.body.age);
     
     const data = {
         name: req.body.name,
