@@ -15,7 +15,7 @@ function Navigate() {
           <Link to="/contact">Contact-Us</Link>
         </li>
         <li>
-          <Link to="/userslist">UserList</Link>
+          <Link to="/userslist">Users List</Link>
         </li>
         <li>
           <Link to="/newuser">New user</Link>
