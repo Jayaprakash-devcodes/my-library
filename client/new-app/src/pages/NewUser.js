@@ -9,7 +9,6 @@ function NewUser() {
   const [successMessage, setSuccessMessage] = useState('');
 
   useEffect(() => {
-    // Fade out messages after 3 seconds
     const timer = setTimeout(() => {
       setErrorMessage('');
       setSuccessMessage('');
@@ -31,7 +30,7 @@ function NewUser() {
       setErrorMessage('');
       setSuccessMessage(response.data.message);
       console.log(response.data);
-      setName(''); // Clear input fields upon successful submission
+      setName(''); 
       setAge('');
     } catch (error) {
       setSuccessMessage('');
