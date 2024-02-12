@@ -30,7 +30,7 @@ function NewUser() {
       setErrorMessage('');
       setSuccessMessage(response.data.message);
       console.log(response.data);
-      setName(''); 
+      setName('');
       setAge('');
     } catch (error) {
       setSuccessMessage('');
@@ -41,15 +41,17 @@ function NewUser() {
 
   return (
     <div>
-      {successMessage && <p className="success message">{successMessage}</p>}
-      {errorMessage && <p className="error message">{errorMessage}</p>}
-      <form onSubmit={handleSubmit}>
-        <label>Name:
+      <form onSubmit={handleSubmit} className="input-form">
+        <div className="form-group">
+          <label>Name:</label>
           <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-        </label>
-        <label>Age:
+        </div>
+        <div className="form-group">
+          <label>Age:</label>
           <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
-        </label>
+        </div>
+        {successMessage && <p className="success message">{successMessage}</p>}
+        {errorMessage && <p className="error message">{errorMessage}</p>}
         <button type="submit">Submit</button>
       </form>
     </div>
