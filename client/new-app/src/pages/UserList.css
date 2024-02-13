@@ -22,4 +22,20 @@
   .user-table tr:hover {
     background-color: #ddd;
   }
+
+  .btn {
+    background-color: rgb(170, 0, 0);
+  }
+
+  .btn:hover {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .success-message {
+    color: green;
+  }
+
+  .error-message {
+    color: red;
+  }
   
